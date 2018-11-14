@@ -12,12 +12,12 @@
 Route::get('/', function () {
 //    \App\Post::create([
 //        'title'=>'test title',
-//        'content'=>'test content'
-//    ]);
-//    $post = new \App\Post();
-//    $post->title = 'test title2';
-//    $post->content = 'test content2';
-//    $post->save();
+//       'content'=>'test content',
+//      ]);
+    $post = new \App\Post();
+    $post->title = 'test title2';
+    $post->content = 'test content2';
+    $post->save();
 //    $post = \App\Post::find(1);
 //    $post->update([
 //        'title' => 'updated title',
