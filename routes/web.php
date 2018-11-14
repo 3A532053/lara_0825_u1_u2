@@ -14,10 +14,7 @@ Route::get('/', function () {
 //        'title'=>'test title',
 //       'content'=>'test content',
 //      ]);
-    $post = new \App\Post();
-    $post->title = 'test title2';
-    $post->content = 'test content2';
-    $post->save();
+
 //    $post = \App\Post::find(1);
 //    $post->update([
 //        'title' => 'updated title',
@@ -26,10 +23,11 @@ Route::get('/', function () {
 //
 //    $posts = \App\Post::all();
  //   dd($posts);
-    $post = \App\Post::find(1);
-    $post->title = 'saved title';
-    $post->content = 'saved content';
-    $post->save();
+//    \App\Post::destroy(2);
+      \App\Post::destroy(3, 5, 7);
+//    $post->title = 'saved title';
+//    $post->content = 'saved content';
+
 //    dd($post);
   //  foreach($post->comments as $comment) {
   //      echo $comment->title.'<br>';
