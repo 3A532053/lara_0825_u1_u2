@@ -26,10 +26,10 @@ Route::get('/', function () {
 //
 //    $posts = \App\Post::all();
 //    dd($posts);
-    $post = \App\Post::find(1);
-    foreach($post->comments as $comment) {
-        echo $comment->title.'<br>';
-    }
+ //   $post = \App\Post::find(1);
+  //  foreach($post->comments as $comment) {
+  //      echo $comment->title.'<br>';
+   // }
 //    return view('welcome');
 });
 Route::get('/home', 'HomeController@index');
